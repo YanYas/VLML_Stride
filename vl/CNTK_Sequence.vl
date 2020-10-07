@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="IrT27anYRszL0u7DZRU732" Summary="VLML Sequence Operation document" Authors="Thinking Forms" Credits="VVVV Group" LicenseUrl="https://github.com/ThinkingForms/VLML/blob/master/LICENSE" ProjectUrl="https://github.com/ThinkingForms/VLML" LanguageVersion="2019.2.0-0126-07acdd0d5f" Version="0.128">
+<Document xmlns:p="property" Id="IrT27anYRszL0u7DZRU732" Summary="VLML Sequence Operation document" Authors="Thinking Forms" Credits="VVVV Group" LicenseUrl="https://github.com/ThinkingForms/VLML/blob/master/LICENSE" ProjectUrl="https://github.com/ThinkingForms/VLML" LanguageVersion="2020.3.0.42" Version="0.128">
   <Patch Id="Au4BEzalPKDP95qcUhFWcx">
     <Canvas Id="KCjbU5bYTXcLLuajcFZdmU" DefaultCategory="VLML" CanvasType="FullCategory">
       <Canvas Id="Gilp3mhyvXBQQd8pn7FWFU" Name="SequenceOps" Position="234,229">
@@ -1063,6 +1063,12 @@
                         <Pin Id="DJaqMtmLfSMM0AU8aVaz8s" Name="Reset" Kind="InputPin" Bounds="497,85">
                           <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
                         </Pin>
+                        <Pin Id="Eb4i133a3OOPIx3C7gmbgG" Name="Device" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
+                        <Pin Id="Tl0zvfz2IiIOnPFTNY1lOZ" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="IRXxE8PHU2wOIf5Vj7LJuL" Name="Output" Kind="OutputPin" Bounds="-2,646" />
                       </Patch>
                     </Patch>
@@ -1218,6 +1224,8 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="Stabilize" />
                           </p:NodeReference>
+                          <Pin Id="LictUJBm3VXOfoFhBh6FrN" Name="Device" Kind="InputPin" />
+                          <Pin Id="GP5NNRPvXwtLLLeXxnJh6x" Name="Debug" Kind="InputPin" />
                           <Pin Id="KhXzmRZ8RzgPJ1szjeXba4" Name="X" Kind="InputPin" />
                           <Pin Id="DpnhviWVHSQL0xjgluxHqO" Name="Reset" Kind="InputPin" />
                           <Pin Id="EZEsUP0n1FaP1vZaeCCWyK" Name="Output" Kind="OutputPin" />
@@ -1227,6 +1235,8 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="Stabilize" />
                           </p:NodeReference>
+                          <Pin Id="O7NnnXMxpIZPK8dYBWoIse" Name="Device" Kind="InputPin" />
+                          <Pin Id="N4L5tqQCMfjNFciqnx4Rwh" Name="Debug" Kind="InputPin" />
                           <Pin Id="LdI9vF3nSEwMXfg7dWzM7K" Name="X" Kind="InputPin" />
                           <Pin Id="Li7PF6NPy0LLsqX5LZOZTS" Name="Reset" Kind="InputPin" />
                           <Pin Id="BLB0DjfKY1KMegohW2mjUT" Name="Output" Kind="OutputPin" />
@@ -1649,6 +1659,8 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="Stabilize" />
                           </p:NodeReference>
+                          <Pin Id="FcaEL82Gf7QQQxU7sMGYs0" Name="Device" Kind="InputPin" />
+                          <Pin Id="DIO96bv4nUBOuaPeKk6KgZ" Name="Debug" Kind="InputPin" />
                           <Pin Id="MRqa6oJyCwdOjsfhB8rhl2" Name="X" Kind="InputPin" />
                           <Pin Id="CLVFCEs6UGQNvRdc5Q4HDQ" Name="Reset" Kind="InputPin" />
                           <Pin Id="P1P3EshaZn5MectNZ5xKXw" Name="Output" Kind="OutputPin" />
@@ -1712,6 +1724,8 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="Stabilize" />
                           </p:NodeReference>
+                          <Pin Id="O7fDSJjkisrOp48qbM1dI1" Name="Device" Kind="InputPin" />
+                          <Pin Id="L2di2k9DAjcNQbiEwSqsYF" Name="Debug" Kind="InputPin" />
                           <Pin Id="Q1wr4vocLL4OuPALNxu7VK" Name="X" Kind="InputPin" />
                           <Pin Id="RtAvDbxJrcmLcxsIkgTWLR" Name="Reset" Kind="InputPin" />
                           <Pin Id="Isw5TcWWkZ0MbGqlALbxYb" Name="Output" Kind="OutputPin" />
@@ -2023,18 +2037,6 @@
                           <Pin Id="C86GtPbOCTFOHEEVEQhV9X" Name="h" Kind="OutputPin" />
                         </Node>
                         <ControlPoint Id="DkaL12XtQhAOAm7wJ2wcIR" Bounds="575,376" />
-                        <Node Bounds="-109,487,25,19" Id="AQzBcb0La5RQZW1iVjgSdI">
-                          <p:NodeReference LastCategoryFullName="VLML.Variables.Placeholders" LastSymbolSource="CNTK_Variables.vl">
-                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                            <CategoryReference Kind="Category" Name="VLML" />
-                            <CategoryReference Kind="Category" Name="Variables" />
-                            <CategoryReference Kind="Category" Name="Placeholders" />
-                            <Choice Kind="ProcessAppFlag" Name="Placeholder (BatchAxis)" />
-                          </p:NodeReference>
-                          <Pin Id="LI6Ojc4qemkNLE2hGiow10" Name="Shape" Kind="InputPin" />
-                          <Pin Id="CIbaCTN4iGUMQ9bRXrzkEZ" Name="Dynamic Axes" Kind="InputPin" />
-                          <Pin Id="GFEfzlO3X2TLwxGsOYYuO9" Name="Result" Kind="OutputPin" />
-                        </Node>
                       </Canvas>
                       <Patch Id="K2Omum5fL41LrYpIENXMUi" Name="Create" />
                       <Patch Id="S8nY3JKTZFNP74CAG9rE8q" Name="Update" ManuallySortedPins="true">
@@ -2451,6 +2453,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="Sdh" />
                           </p:NodeReference>
+                          <Pin Id="BKH6RXKTFspOFJtvLI7Zs2" Name="Debug" Kind="InputPin" />
                           <Pin Id="FRvwLNoTXkyNO2Ba1UWzv3" Name="X" Kind="InputPin" />
                           <Pin Id="Av8kd43ilx8QMAvXXosjQ4" Name="Output" Kind="OutputPin" />
                         </Node>
@@ -2503,6 +2506,9 @@
                         <Pin Id="S1QJAyJjZhyLW38J7sehKo" Name="X" Kind="InputPin" Bounds="253,208" />
                         <Pin Id="IwKUTyQ9tIMQNORnemAcyj" Name="Stack Axis" Kind="InputPin" Bounds="274,354" />
                         <Pin Id="TZP2fm9pd26OS44zVaM8hq" Name="Stack Dim" Kind="InputPin" Bounds="394,323" />
+                        <Pin Id="AJzV1epKvmaO7n7cZRxVuf" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="K9B7CaDVZCfLofkjqYeCbv" Name="Output" Kind="OutputPin" Bounds="443,684" />
                       </Patch>
                     </Patch>
@@ -2992,6 +2998,9 @@
                           <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
                         </Pin>
                         <Pin Id="Q8F5XCvY2mMLj3IpO7wF4U" Name="Name" Kind="InputPin" Bounds="-50,172" />
+                        <Pin Id="TUn5vmfY2sVPhzuja4t8TS" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="TEARpAS2EtcPVq2jOkerfU" Name="Output" Kind="OutputPin" Bounds="-425,582" />
                       </Patch>
                     </Patch>
@@ -3012,6 +3021,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="GRUStabilizer" />
                           </p:NodeReference>
+                          <Pin Id="CV8rgs8JlVgLOFICuBBtfp" Name="Debug" Kind="InputPin" />
                           <Pin Id="ANZiG3yCdpxPKYJMGITZVX" Name="X" Kind="InputPin" />
                           <Pin Id="CpcenkGr8lZMrJJaUqD9lL" Name="Steepness" Kind="InputPin" />
                           <Pin Id="HfWoph9jDWNL9UulVWeXPQ" Name="Name" Kind="InputPin" />
@@ -3037,6 +3047,9 @@
                       <Patch Id="PDTm8oHwL2VMU7ff2ecwDZ" Name="Create" />
                       <Patch Id="QYm3s1gCjk1Pb0L7DlpPWQ" Name="Update">
                         <Pin Id="VWju0qwWCl0PaUTY0oFQUe" Name="X" Kind="InputPin" Bounds="377,357" />
+                        <Pin Id="SYaYLBoCAVaOpwXomofDyG" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="E9lI1cNbg6FQS9kw8cTHTx" Name="Output" Kind="OutputPin" Bounds="414,594" />
                       </Patch>
                     </Patch>
@@ -3057,6 +3070,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="GRUStabilizer" />
                           </p:NodeReference>
+                          <Pin Id="Dn02H6ShNOfOcl1xUV0fRL" Name="Debug" Kind="InputPin" />
                           <Pin Id="Cf6et5W3CKLOXbTam6xwIY" Name="X" Kind="InputPin" />
                           <Pin Id="GzKhrtJICeONa1i4rBr8RM" Name="Steepness" Kind="InputPin" />
                           <Pin Id="Sg4n7OdwjxHQSvgxxSg4RJ" Name="Name" Kind="InputPin" />
@@ -3082,6 +3096,9 @@
                       <Patch Id="OJ4NMldxvmpOOLE3O0Jm4b" Name="Create" />
                       <Patch Id="UA8YB4E7pQVNrGM9Xkovxf" Name="Update">
                         <Pin Id="C1emHm4hlZ1QAPq7LhgfOm" Name="X" Kind="InputPin" Bounds="377,357" />
+                        <Pin Id="A37lbkgn4HxNtZycDyoVZI" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="A1mlwak0PRSNBh7yKoMfiu" Name="Output" Kind="OutputPin" Bounds="414,594" />
                       </Patch>
                     </Patch>
@@ -3102,6 +3119,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="GRUStabilizer" />
                           </p:NodeReference>
+                          <Pin Id="O97NhiCnA5YQEeABYyMWLA" Name="Debug" Kind="InputPin" />
                           <Pin Id="RfSMFp11WuGOj3LI6DZwD8" Name="X" Kind="InputPin" />
                           <Pin Id="JlAwgdrMxokLNXcpwwchEU" Name="Steepness" Kind="InputPin" />
                           <Pin Id="S0sKFRUsVUZPx2IR6RQQGA" Name="Name" Kind="InputPin" />
@@ -3127,6 +3145,9 @@
                       <Patch Id="MBbHDB7XsSnOvNDaPHu2Za" Name="Create" />
                       <Patch Id="TztWR0jJYNbLzsYoRDGZ3P" Name="Update">
                         <Pin Id="Ph8WzI431UbPSeaX39krMf" Name="X" Kind="InputPin" Bounds="377,357" />
+                        <Pin Id="KAkBQiFA8oTNDFipQKu2H9" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="RExL4XfRjfvNmLw7WtMDp3" Name="Output" Kind="OutputPin" Bounds="414,594" />
                       </Patch>
                     </Patch>
@@ -3147,6 +3168,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="GRUStabilizer" />
                           </p:NodeReference>
+                          <Pin Id="LWCOhNuZCOfOLf2e5OQAzk" Name="Debug" Kind="InputPin" />
                           <Pin Id="VnUb9gC7YUBLXvXCf8M14r" Name="X" Kind="InputPin" />
                           <Pin Id="NnjExhvvAXYNQqp3E4f3ki" Name="Steepness" Kind="InputPin" />
                           <Pin Id="B89ew2w2YBhONfy14o4Xbt" Name="Name" Kind="InputPin" />
@@ -3172,6 +3194,9 @@
                       <Patch Id="ByvgcMYt7b9LpGPX2a4F3Q" Name="Create" />
                       <Patch Id="LkBU1hlHPLpQKbdvOxRboW" Name="Update">
                         <Pin Id="OXaOFZQwkIlLir9EyKB1Zi" Name="X" Kind="InputPin" Bounds="377,357" />
+                        <Pin Id="SrPMJJjVBnxL5sTf7LklcG" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="IazLNGCT49XMvTs0GtfQug" Name="Output" Kind="OutputPin" Bounds="414,594" />
                       </Patch>
                     </Patch>
@@ -3210,6 +3235,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="zt_proj" />
                           </p:NodeReference>
+                          <Pin Id="S76991cnHOYLt24PNV2FGU" Name="Debug" Kind="InputPin" />
                           <Pin Id="KZMfBzpj6nZPK2VF7JbPGx" Name="X" Kind="InputPin" />
                           <Pin Id="Cy42A8nudmjNyB5FmhZuFS" Name="Stack Axis" Kind="InputPin" />
                           <Pin Id="A6XHJERdaF9P9UPvXZDjYY" Name="Stack Dim" Kind="InputPin" />
@@ -3248,6 +3274,9 @@
                         <Pin Id="SPx8OpXxpeSMN9mzYF9K9m" Name="X" Kind="InputPin" Bounds="227,424" />
                         <Pin Id="CGlVpsBXwMKPQTi603CxSH" Name="Stack Axis" Kind="InputPin" Bounds="282,422" />
                         <Pin Id="T5KUdTvVgrxNIEaPgD5iyW" Name="Stack Dim" Kind="InputPin" Bounds="372,418" />
+                        <Pin Id="Lp6eYKVcrvOPPdJLpL7hc0" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="S7ETqV8D8BXLHAwtZPa9jr" Name="Output" Kind="OutputPin" Bounds="262,676" />
                       </Patch>
                     </Patch>
@@ -3306,6 +3335,9 @@
                         <Pin Id="OsBVYELJ7ctQXq9Ra0nuzZ" Name="X" Kind="InputPin" Bounds="227,424" />
                         <Pin Id="TSEv1TxqyeePQxBaVLDhd1" Name="Stack Axis" Kind="InputPin" Bounds="282,422" />
                         <Pin Id="GWDg9Duk5X0NmeM1VTYzJ4" Name="Stack Dim" Kind="InputPin" Bounds="372,418" />
+                        <Pin Id="E1jAdi28R3qN9R5I4buP3N" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="MigvCoL2QMbMNlRslZKqFV" Name="Output" Kind="OutputPin" Bounds="262,676" />
                       </Patch>
                     </Patch>
@@ -3345,6 +3377,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="rt" />
                           </p:NodeReference>
+                          <Pin Id="EuhjcIemU88MofUV4zhU9X" Name="Debug" Kind="InputPin" />
                           <Pin Id="URfyipmk2HlL04cUzTAWsP" Name="X" Kind="InputPin" />
                           <Pin Id="TvmnQF7J5MvPK8MgUdAuY0" Name="Stack Axis" Kind="InputPin" />
                           <Pin Id="DG74Y26Xi4PPJ7zuElKtWh" Name="Stack Dim" Kind="InputPin" />
@@ -3365,6 +3398,9 @@
                       <Patch Id="NCPhzKUSuDlO4BJBHFTQvQ" Name="Create" />
                       <Patch Id="ICVzjItj0veNSVimsQ38aR" Name="Update">
                         <Pin Id="R5skD6jdCWiMb9vMh1JEm9" Name="dhs" Kind="InputPin" Bounds="188,462" />
+                        <Pin Id="Eo3zzlGArGpLlAMPLUKQQL" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="IQA8WtMD5gXOxK1dnlBr7G" Name="Output" Kind="OutputPin" Bounds="252,628" />
                       </Patch>
                     </Patch>
@@ -3433,6 +3469,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="rs" />
                           </p:NodeReference>
+                          <Pin Id="CwGgsAeiSE8Ns6kdWYMFbw" Name="Debug" Kind="InputPin" />
                           <Pin Id="CioMFRh7HkdLuKqqJTG5MF" Name="dhs" Kind="InputPin" />
                           <Pin Id="BtqFSlekmfRNfgd4VfgEUR" Name="Output" Kind="OutputPin" />
                         </Node>
@@ -3476,6 +3513,9 @@
                         <Pin Id="EesAF3CvVMIOfVEIO6sKJv" Name="Stack Axis" Kind="InputPin" Bounds="264,424" />
                         <Pin Id="CCBkbQVoYVDLy7yucYfctk" Name="Stack Dim" Kind="InputPin" Bounds="280,451" />
                         <Pin Id="GqCHC0zqNbrONIwDCsWh71" Name="dhs" Kind="InputPin" Bounds="374,452" />
+                        <Pin Id="UbIpPFyCsceMkgylqOGU8L" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="D1jbcfEARZQLE6pGsVBF57" Name="Output" Kind="OutputPin" Bounds="293,684" />
                       </Patch>
                     </Patch>
@@ -3511,6 +3551,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="zt" />
                           </p:NodeReference>
+                          <Pin Id="PQKu4HcMJjkNkaGPEpL5Eh" Name="Debug" Kind="InputPin" />
                           <Pin Id="Byzz9cfaAL9O1rXwddukZt" Name="X" Kind="InputPin" />
                           <Pin Id="PSZKU1TPBEyOhgBQohqmFR" Name="Stack Axis" Kind="InputPin" />
                           <Pin Id="TLFiD5sKFRAOUTNTdoYP0s" Name="Stack Dim" Kind="InputPin" />
@@ -3550,6 +3591,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="ct" />
                           </p:NodeReference>
+                          <Pin Id="NVrcol6odpmPgZ1tCGN0ml" Name="Debug" Kind="InputPin" />
                           <Pin Id="CBr0Tkxs4rMMSyHiHQ4kUO" Name="X" Kind="InputPin" />
                           <Pin Id="GY0DgUdgbxwNRVS4FdMIVS" Name="Stack Axis" Kind="InputPin" />
                           <Pin Id="I6tnnvGKUnZO79IYQtIr7x" Name="Stack Dim" Kind="InputPin" />
@@ -3580,6 +3622,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="Sdh" />
                           </p:NodeReference>
+                          <Pin Id="Rd5W3PF5NbfMpp5WtmNDgx" Name="Debug" Kind="InputPin" />
                           <Pin Id="AmbASyy170GMBe7f7DT30I" Name="X" Kind="InputPin" />
                           <Pin Id="RfVV7lcwh9gLCMhIXjgvv1" Name="Output" Kind="OutputPin" />
                         </Node>
@@ -3625,6 +3668,9 @@
                       <Patch Id="OkdHKcmrUaoMkNLk8YtcPb" Name="Create" />
                       <Patch Id="TOMsYeCEpSMOojN1Lh7Uza" Name="Update">
                         <Pin Id="HWEU8gAnZhjNTr1WHJfwtv" Name="dh" Kind="InputPin" Bounds="265,613" />
+                        <Pin Id="PD7aHfpghNyNKIwBokzUQx" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="Bemt16ideAYOSmMf7Obo4z" Name="Output" Kind="OutputPin" Bounds="191,791" />
                       </Patch>
                     </Patch>
@@ -3645,6 +3691,7 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="Sht" />
                           </p:NodeReference>
+                          <Pin Id="FnTMRoXZw4LObMlDeDeFOT" Name="Debug" Kind="InputPin" />
                           <Pin Id="IEU5hibjtKUQPWMv7w59dc" Name="X" Kind="InputPin" />
                           <Pin Id="QF1chCyMGOOQXf57MtXYYf" Name="Output" Kind="OutputPin" />
                         </Node>
@@ -3731,6 +3778,9 @@
                       <Patch Id="QHaYqZbYcnRQJjhJBYtix9" Name="Update">
                         <Pin Id="BPluchbpxA3NyPpZA3qGe2" Name="has_projection" Kind="InputPin" Bounds="318,329" />
                         <Pin Id="AcWNgxgd2xUPo937hWIIva" Name="ht" Kind="InputPin" Bounds="313,452" />
+                        <Pin Id="Ds1C4VT52XaNlBVPWmlVZC" Name="Debug" Kind="InputPin">
+                          <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                        </Pin>
                         <Pin Id="TSm0sjgpMPcN2PJq2J19C0" Name="Output" Kind="OutputPin" Bounds="317,756" />
                       </Patch>
                     </Patch>
@@ -3822,6 +3872,7 @@
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="h" />
                     </p:NodeReference>
+                    <Pin Id="NdMlT53Mla0OuZ7PW4F9tX" Name="Debug" Kind="InputPin" />
                     <Pin Id="P3CmDjgro8eOkoR4L3Kiru" Name="has_projection" Kind="InputPin" />
                     <Pin Id="CCLWKuKNgwxLVoEPRXviD6" Name="ht" Kind="InputPin" />
                     <Pin Id="DYrx9cP1ulKOM3fshZSYxG" Name="Output" Kind="OutputPin" />
@@ -3832,6 +3883,7 @@
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="ht" />
                     </p:NodeReference>
+                    <Pin Id="NxIF7ODn6xDLiTDkmCtMfo" Name="Debug" Kind="InputPin" />
                     <Pin Id="MOORtrWRRcJLuvYAFFdUPN" Name="dh" Kind="InputPin" />
                     <Pin Id="KiZEPQOkTrTNp7F00XxJnW" Name="Output" Kind="OutputPin" />
                   </Node>
@@ -3845,6 +3897,9 @@
                 <Link Id="Qr2IlUWx5smOBOzlFuQcaO" Ids="KiZEPQOkTrTNp7F00XxJnW,CCLWKuKNgwxLVoEPRXviD6" />
                 <Patch Id="RBTmNW4QouKLNe92nkWnGC" Name="Create" />
                 <Patch Id="PrIvWmsVcKYNP8zoPQeyv2" Name="Update">
+                  <Pin Id="O2cllwLigiwLQLtKKZZ2ya" Name="Debug" Kind="InputPin">
+                    <p:Exposition p:Assembly="VL.Lang" p:Type="VL.Model.PinExpositionMode">Expose</p:Exposition>
+                  </Pin>
                   <Pin Id="TTAtgFZEaCPP8XFdM2vsAz" Name="Output" Kind="OutputPin" Bounds="390,997" />
                 </Patch>
               </Patch>
@@ -3952,7 +4007,6 @@
             <Link Id="OGmBKhgYsvXM3OULCGhxaU" Ids="G3BV3exv9iBOjISUEf06o3,VRV0mEkD8VSPlF0vOn38uS" />
           </Patch>
         </Node>
-        <Canvas Id="QubCF8ewyFmNxVZN2LRWiM" Name="Experimental" Position="496,673" />
       </Canvas>
     </Canvas>
     <!--
@@ -3966,7 +4020,7 @@
         <FullNameCategoryReference ID="Primitive" />
       </p:NodeReference>
       <Patch Id="QzJAo46mn6yPdUjG0hgl6S">
-        <Canvas Id="NQlN4zNzba7PZTsfj3eIOE" BordersChecked="false" CanvasType="Group" />
+        <Canvas Id="NQlN4zNzba7PZTsfj3eIOE" CanvasType="Group" />
         <Patch Id="SEDy4WJ8BuxLdsM6aU4nOk" Name="Create" />
         <Patch Id="FaP0dMWg5V0PK6tNLPsVTh" Name="Update" />
         <ProcessDefinition Id="TpRw8kQX2nwOueJoEVVYTG">
@@ -3976,13 +4030,12 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="U0xz1AC0xqSPLSwy65cf5p" Location="VL.Core" Version="2019.2.0-0126-g07acdd0d5f" />
-  <NugetDependency Id="CeMgk7NjBH2PQ6kuU6tAvJ" Location="VL.CoreLib" Version="2019.2.0-0126-g07acdd0d5f" />
-  <NugetDependency Id="Mp9BpgaaALMLp3nX1jwYG5" Location="VL.CoreLib.VVVV" Version="0.93.21-g99c25bebaf" />
+  <NugetDependency Id="U0xz1AC0xqSPLSwy65cf5p" Location="VL.Core" Version="2020.3.0-0042-g1a9a5c158d" />
+  <NugetDependency Id="CeMgk7NjBH2PQ6kuU6tAvJ" Location="VL.CoreLib" Version="2020.3.0-0042-g1a9a5c158d" />
   <DocumentDependency Id="PVJ3xzNOQueNiy5dLuf0Rj" Location="./CNTK_Core.vl" />
   <DocumentDependency Id="SclAYZKU2vwMLHA6KMuqev" Location="./CNTK_Operations.vl" />
   <DocumentDependency Id="SQ6eYq7tScwP4QDReH8oNP" Location="./CNTK_Utils.vl" />
   <PlatformDependency Id="G9IAy0H6W7DPFgUjEMWh8w" Location="../lib/net461/CNTK.VL.Helpers.dll" />
   <DocumentDependency Id="MAwP2S5kIpPOibECJoK9aM" Location="./CNTK_Variables.vl" />
-  <PlatformDependency Id="V4LXnGxPui6N0uj86XyVLV" Location="../../CNTK.GPU.2.7.0/lib/netstandard2.0/Cntk.Core.Managed-2.7.dll" />
+  <NugetDependency Id="IHygRLvdQZYNCLmq5LwSWw" Location="CNTK.GPU" Version="2.7.0" />
 </Document>

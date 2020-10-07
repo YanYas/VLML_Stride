@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Tl1XowaDYw6NkBrI9w4HhQ" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
+<Document xmlns:p="property" Id="Tl1XowaDYw6NkBrI9w4HhQ" LanguageVersion="2020.3.0.42" Version="0.128">
   <Patch Id="FPcbjxYefM6L1qCNlaizA3">
     <Canvas Id="Sd2vQyiXIKONJTpaMviTiv" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -13,7 +13,7 @@
         <FullNameCategoryReference ID="Primitive" />
       </p:NodeReference>
       <Patch Id="BGV9hCQxUdAPxW4qafFSfp">
-        <Canvas Id="LOXGVj5TikrLYQJ9dOxzQy" BordersChecked="false" CanvasType="Group" />
+        <Canvas Id="LOXGVj5TikrLYQJ9dOxzQy" CanvasType="Group" />
         <Patch Id="OFUIXS1rUOUNB7tOuHdI7X" Name="Create" />
         <Patch Id="FjFikCYtmwxLbVSitMp23F" Name="Update" />
         <ProcessDefinition Id="LH6JKG3wlCBP8XujOwCxHN">
@@ -23,9 +23,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RvaWzamZuGAMRrysLWCCrY" Location="VL.Core" Version="0.93.21-g99c25bebaf" />
-  <NugetDependency Id="EZo1WVmvRPTLukBPxn4nTh" Location="VL.CoreLib" Version="0.93.21-g99c25bebaf" />
-  <NugetDependency Id="FR2gyq1bYEwLqwsN8INGt8" Location="VL.CoreLib.VVVV" Version="0.93.21-g99c25bebaf" />
+  <NugetDependency Id="RvaWzamZuGAMRrysLWCCrY" Location="VL.Core" Version="2020.3.0-0042-g1a9a5c158d" />
+  <NugetDependency Id="EZo1WVmvRPTLukBPxn4nTh" Location="VL.CoreLib" Version="2020.3.0-0042-g1a9a5c158d" />
   <DocumentDependency Id="GWnwnH1pjw0L8iThpIaezI" Location="./CNTK_Core.vl" IsForward="true" />
   <DocumentDependency Id="ScQYgYGLz3jNc2rQg2AyPM" Location="./CNTK_DataIO.vl" IsForward="true" />
   <DocumentDependency Id="DabJVBR6apYQFv1AEtPIrz" Location="./CNTK_Evaluation.vl" IsForward="true" />
@@ -38,4 +37,5 @@
   <DocumentDependency Id="KLiJHTEVIj4MzxUyxyl3YK" Location="./CNTK_Variables.vl" IsForward="true" />
   <DocumentDependency Id="FsuSOGPlkZkNGiqFLidpwe" Location="./CNTK_Metrics.vl" IsForward="true" />
   <DocumentDependency Id="MRhJJYUVrNhP8BPcmhhHCu" Location="./CNTK_HighLevelOps.vl" IsForward="true" />
+  <NugetDependency Id="PSKqNgfDVozMrhP6lovqxv" Location="CNTK.GPU" Version="2.7.0" />
 </Document>

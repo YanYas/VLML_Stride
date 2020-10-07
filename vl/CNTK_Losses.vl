@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="B6DOoJR72RyLEFXDuFqRS2" LanguageVersion="2019.1.0-0975-gbe94390fc5" Version="0.128">
+<Document xmlns:p="property" Id="B6DOoJR72RyLEFXDuFqRS2" LanguageVersion="2020.3.0.42" Version="0.128">
   <Patch Id="ERP90BKJLBgPyjg1xaxREJ">
     <Canvas Id="GFjpELdK7XpNdqiTYotKCR" DefaultCategory="VLML" CanvasType="FullCategory">
       <Canvas Id="HRnBt0PcIsoNqnQIrms9mR" Name="Losses" Position="337,324">
@@ -944,7 +944,7 @@
               </Node>
               <ControlPoint Id="V4rSyFxfMIxLxBoKwK5adB" Bounds="408,349" />
               <Node Bounds="355,517,85,22" Id="IoSBmzv29aqMg7SflmVml6">
-                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ApplicationStatefulRegion" Name="If" />
                   <FullNameCategoryReference ID="Primitive" />
@@ -1587,13 +1587,12 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="MLyjp2JYrwmLW1KaOwsAUD" Location="VL.Core" Version="0.93.21-g99c25bebaf" />
-  <NugetDependency Id="JXfH8CaWSgPP2k44jXvQhI" Location="VL.CoreLib" Version="0.93.21-g99c25bebaf" />
-  <NugetDependency Id="CMbEFCg9ZT1PhB10sfzlyw" Location="VL.CoreLib.VVVV" Version="0.93.21-g99c25bebaf" />
+  <NugetDependency Id="MLyjp2JYrwmLW1KaOwsAUD" Location="VL.Core" Version="2020.3.0-0042-g1a9a5c158d" />
+  <NugetDependency Id="JXfH8CaWSgPP2k44jXvQhI" Location="VL.CoreLib" Version="2020.3.0-0042-g1a9a5c158d" />
   <DocumentDependency Id="V2f4d8G3aOPNYAfl9o6b2c" Location="./CNTK_Core.vl" />
   <DocumentDependency Id="Iijdu3fRmyHLbmA8FQYghD" Location="./CNTK_Operations.vl" />
   <DocumentDependency Id="TR8tyXQD6aTMYGmYT96ZhC" Location="./CNTK_Utils.vl" />
   <PlatformDependency Id="G6aT6QQGf9vNsQkiUSCwf9" Location="../lib/net461/CNTK.VL.Helpers.dll" />
   <DocumentDependency Id="G4iZLXecZ71NlSvccFWCKg" Location="./CNTK_Sequence.vl" />
-  <PlatformDependency Id="UgxifR8eqqFL7AOEL3SBZs" Location="../../CNTK.GPU.2.7.0/lib/netstandard2.0/Cntk.Core.Managed-2.7.dll" />
+  <NugetDependency Id="B3PLj19gpZsPHD2VfIiFJh" Location="CNTK.GPU" Version="2.7.0" />
 </Document>

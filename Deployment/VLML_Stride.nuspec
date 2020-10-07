@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>VLML</id>
+    <id>VLML_Stride</id>
     <version>$version$</version>
-    <title>VLML</title>
+    <title>VLML_Stride</title>
     <authors>Hayden Anyasi, vvvv group</authors>
-    <owners>Thinkning Forms</owners>
+    <owners>Hayden Anyasi</owners>
     <licenseUrl>https://github.com/ThinkingForms/VLML/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/ThinkingForms/VLML</projectUrl>
+    <projectUrl>https://github.com/yanyas/VLML_Stride</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>A machine learning framework for VL visual programming language</summary>
+    <summary>A machine learning framework for VL visual programming language, compatible with vvvv Gamma 2020.3.043 and later.</summary>
     <description>VLML for VL</description>
-    <copyright>Copyright © 2018 by Thinkning Forms. All rights reserved.</copyright>
+    <copyright>Copyright © 2018 by Hayden Anyasi. All rights reserved.</copyright>
     <tags>VL, CNTK</tags>
     <dependencies>
       <dependency id="CNTK.GPU" version="[2.7.0]" />
